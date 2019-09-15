@@ -36,15 +36,15 @@ public class EmployeeConntroller {
 		throw new EmployeeNotFoundException("Employee Not Found...");
 		//return new ResponseEntity<>(null, null, HttpStatus.OK);
 		}catch(Exception e) {
-			
+			throw new EmployeeNotFoundException("Employee Not Found...");
 		}
-		List<Employee> employeeList = new ArrayList<Employee>();
+		/*List<Employee> employeeList = new ArrayList<Employee>();
 		Employee employee = new Employee();
 		employee.setEmployeeId(704481);
 		employee.setEmployeeName("Arijit");
 		employee.setEmployeeAddress("Masat,Hooghly");
 		employeeList.add(employee);
 		// return employeeList;
-		return new ResponseEntity<List<Employee>>(employeeList, HttpStatus.OK);
+		return new ResponseEntity<List<Employee>>(employeeList, HttpStatus.OK);*/
 	}
 }
